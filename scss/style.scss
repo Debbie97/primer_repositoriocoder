@@ -1,0 +1,89 @@
+@import "colores";
+/*variables*/
+$title-font:normal 15px/'Courier New', Courier, monospace;
+$title-foot:normal 20px/'Lobster', cursive;
+
+/*scss*/
+@mixin sizes ($width,$max-width){
+    width:$width;
+    max-width:$max-width;
+}
+@mixin sizeshm ($width,$height){
+    width:$width;
+    height:$height;
+}
+@mixin margin($margin){
+    margin:$margin;
+}
+
+.menu__contenedorpre h3{
+    font-family:$title-font ;
+    color:$color-aqua;
+}
+#name{
+    color:$color-blanco;
+    font-family:$title-font ;
+    @include margin(3px);
+}
+.header{
+    padding: 8px;
+    border-bottom:$color-aqua;
+}
+/*seccion contedor/menu*/
+.contenedor__body .menu__contenedor{
+    background: $color-negro;
+    @include sizeshm(300px,auto);
+    @include margin(0%);
+}
+
+.menu__contenedorpre--secciones {
+    a:link,a:visited{
+        color:$color-sea;
+    }
+
+}
+.menu__contenedorpre--secciones {
+    ul li {
+        @include margin(3px);
+    }
+
+}
+.menu__contenedorpre img{
+    @include margin(10px);
+}
+.contenedor__body {
+@include sizes(auto,1500px);
+}
+/*seccion obras*/
+.main__seccionobras{
+    @include margin(1em); 
+    
+    img{
+        @include margin(23px);
+        @include sizeshm(200px,200px);
+    }
+   
+    .textObras{
+        font-family:$title-font;
+        color:$color-sea;
+        text-align: center;
+    }
+}
+.main__seccionobras2{
+  @extend .main__seccionobras;
+    
+}
+/*seccion bio*/
+.bio{
+    font-family: $title-font;
+    color:$color-sea ;
+}
+/*colores formularios*/
+input[type=submit]{
+    background-color:$color-aqua;
+    color:$color-blanco;
+}
+
+input[type=submit]:hover{
+    background-color:$color-aqua ;
+}

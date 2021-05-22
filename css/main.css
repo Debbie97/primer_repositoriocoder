@@ -1,0 +1,59 @@
+/*variables*/
+/*scss*/
+.menu__contenedorpre h3 {
+  font-family: normal 15px/"Courier New", Courier, monospace;
+  color: #00c1c5; }
+
+#name {
+  color: white;
+  font-family: normal 15px/"Courier New", Courier, monospace;
+  margin: 3px; }
+
+.header {
+  padding: 8px;
+  border-bottom: #00c1c5; }
+
+/*seccion contedor/menu*/
+.contenedor__body .menu__contenedor {
+  background: #131111;
+  width: 300px;
+  height: auto;
+  margin: 0%; }
+
+.menu__contenedorpre--secciones a:link, .menu__contenedorpre--secciones a:visited {
+  color: #dbd2cb; }
+
+.menu__contenedorpre--secciones ul li {
+  margin: 3px; }
+
+.menu__contenedorpre img {
+  margin: 10px; }
+
+.contenedor__body {
+  width: auto;
+  max-width: 1500px; }
+
+/*seccion obras*/
+.main__seccionobras, .main__seccionobras2 {
+  margin: 1em; }
+  .main__seccionobras img, .main__seccionobras2 img {
+    margin: 23px;
+    width: 200px;
+    height: 200px; }
+  .main__seccionobras .textObras, .main__seccionobras2 .textObras {
+    font-family: normal 15px/"Courier New", Courier, monospace;
+    color: #dbd2cb;
+    text-align: center; }
+
+/*seccion bio*/
+.bio {
+  font-family: normal 15px/"Courier New", Courier, monospace;
+  color: #dbd2cb; }
+
+/*colores formularios*/
+input[type=submit] {
+  background-color: #00c1c5;
+  color: white; }
+
+input[type=submit]:hover {
+  background-color: #00c1c5; }
